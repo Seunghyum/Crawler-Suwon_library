@@ -1,0 +1,15 @@
+
+<h1> 유저 페이지 </h1>
+<% if user_signed_in? %>
+<%= current_user.inspect %>
+<a href="/users/sign_out">로그아웃 하기</a>
+<% else %>
+<a href="/users/sign_in">로그인하기</a>
+<%end%>
+
+<form action="/home/output" method="GET">
+    <input type="text" name="book_name_input">
+    <input type="submit" value="검색">
+</form>
+    <br><%= @book_name%>
+    <br><%= @image%>
