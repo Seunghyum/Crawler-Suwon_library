@@ -12,7 +12,6 @@ class HomeController < ApplicationController
         @title = @html.css("h4.title//a")
         @title_array = Array.new
         
-        
 =begin       @title.each do |i|
             @title_array = i #1개밖에 안구해진다... 연구필요
 =end       end
