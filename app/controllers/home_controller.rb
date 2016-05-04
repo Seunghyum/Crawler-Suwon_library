@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
+    
     def input
     end
+    
     def output
         
         #수원 중앙도서관
@@ -20,16 +22,16 @@ class HomeController < ApplicationController
         @text_array = Array.new
         @text = @html.css('li//p.author').inner_text
         
-=begin            for p_html in @text do
-            if p_html['p'].include? 'author' ###만일 @images 안에 저장된 image_html코드들 중에서 src태그인데 'i1.cartoon.daumcdn.net'이라는 문자열을 포함한다면
-                @text_array.push(p_html['p']) ##image_html에 src태그 코드를 @image_samples라는 비어있는 array에 넣어라.        
-            end
-=end        end
-=begin        for image_html in @text do ########노코기리로 불러오고 저장한 @images 에 있는 image_html코드들 중에서 어떠한 것을 반복한다. (image_html은 지역변수가 아니라 명령어다) 
-            @text_array = @text
-        end
+        # for p_html in @text do
+        #     if p_html['p'].include? 'author' ###만일 @images 안에 저장된 image_html코드들 중에서 src태그인데 'i1.cartoon.daumcdn.net'이라는 문자열을 포함한다면
+        #         @text_array.push(p_html['p']) ##image_html에 src태그 코드를 @image_samples라는 비어있는 array에 넣어라.        
+        #     end
+        # end
+        # for image_html in @text do ########노코기리로 불러오고 저장한 @images 에 있는 image_html코드들 중에서 어떠한 것을 반복한다. (image_html은 지역변수가 아니라 명령어(약속어) ) 
+        #     @text_array = @text
+        # end
 
-=end
+
  #도서 이미지
         @image = @html.css("#A-LibMPageSearchList//img")
         @image_samples = Array.new 
