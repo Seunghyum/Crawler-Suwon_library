@@ -9,7 +9,7 @@ class HomeController < ApplicationController
         @row = @html.css("tr").length
         
         @row.times do |x|    
-            SchoolInfo.create(name: @html.css("table//tr:nth-child(#{x})//td:nth-child(3)").inner_text, phone: @html.css("table//tr:nth-child(#{x})//td:nth-child(4)").inner_text )
+            SchoolInfo.create(name: @html.css("table//tr:nth-child(#{x})//td:nth-child(4)").inner_text, phone: @html.css("table//tr:nth-child(#{x})//td:nth-child(5)").inner_text )
         end
     end
     
