@@ -1,25 +1,22 @@
+# 수원 국립도서관 도서목록 크롤링
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+멋쟁이 사자처럼 3기 - 크롤링 연습
 
+### Installing
 
-Welcome to your Rails project on Cloud9 IDE!
+라이브러리 설치
 
-To get started, just do the following:
+```
+$ bundle install 
+```
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://library-search-seunghyum.c9.io/).
+서버시작
 
-Happy coding!
-The Cloud9 IDE team
+```
+$ rails s
+```
 
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
-# Nokogiri
+## Built With
+- 언어 : Ruby
+- 프레임 워크 : Rails
+- 데이터베이스 : Sqlite3
